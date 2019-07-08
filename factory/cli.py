@@ -45,7 +45,7 @@ def run_prep_commands(dir_name, cli_name):
         mv cli-runner.py {NAME}-runner.py && \
         mv {NAME}/cli.py {NAME}/{NAME}.py && \
         chmod +x {NAME}-runner.py && \
-        python3 -m venv venv/ && \
+        virtualenv venv/ && \
         source venv/bin/activate && \
         pip install -r requirements.txt && \
         deactivate && \

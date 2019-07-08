@@ -49,7 +49,7 @@ def run_prep_commands(dir_name):
         the virtualenv, etc. """
     commands = """
         cd {NAME} && \
-        python -m venv venv/ && \
+        virtualenv venv/ && \
         source venv/bin/activate && \
         pip install -r requirements.txt && \
         deactivate && \
